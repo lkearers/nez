@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('https://wallpapercave.com/wp/wp3102519.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Metal Lord', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-attachment: fixed;
+}
+    @font-face {
+  font-family: 'Metal Lord';
+  src: url('METALORD.ttf') format('truetype');
+}
+     @font-face {
+  font-family: 'VTKS Dura 3D';
+  src: url('VTKS DURA 3d.ttf') format('truetype');
+}
+    @font-face {
+  font-family: 'Under Authority';
+  src: url('UnderAuthority.otf') format('opentype');
+}
+button {
+  font-family: 'Roboto', sans-serif;
+  margin: 4px;
+   background-color: rgba(23, 26, 46, 0.5);
+}
+
+    .terminal {
+      background-color: rgba(23, 26, 46, 0);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(65, 211, 208, 0.8);
+      color: #715778;
+      width: 600px;
+      max-width: 90%;
+      margin: 0 auto;
+      align-text: center;
+      backdrop-filter: blur(50px);
+    }
+    
+    .title-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .title {
+      color: #c5bacb;
+      font-size: 18px;
+      font-family: 'VTKS Dura 3D', sans-serif;
+    }
+    
+    .close-btn {
+      background-color: #41d3d0;
+      border: none;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    
+    .close-btn:hover {
+      background-color: #697ea0;
+    }
+    
+    .content {
+      color: #c5bacb;
+    }
+    
+    .command-line {
+      margin-top: 10px;
+      padding: 5px;
+      background-color: rgba(113, 87, 120, 0.5);
+      border-radius: 20px;
+    }
+    
+    .command-line input {
+      background-color: transparent;
+      border: none;
+      color: #c5bacb;
+      width: 100%;
+      outline: none;
+    }
+    
+    .command-line input:focus {
+      outline: none;
+    }
+    
+    .output {
+      margin-top: 10px;
+      background-color: #715778;
+      padding: 10px;
+      border-radius: 20px;
+            background-color: rgba(113, 87, 120, 0.5);
+            text-align: center;
+
+    }
+    
+    .output p {
+      margin: 0;
+      color: #41d3d0;
+    }
+
+</style>
+</head>
+
+<body>
+  
+
+  <hr style="color: #41d3d0; background-color: #333; height: 2px; border: none;">
+
+ <div class="terminal">
+    <div class="title-bar">
+      <div class="title">Lite Pro</div>
+      <button class="close-btn">X</button>
+    </div>
+   <hr style="color: #41d3d0; background-color: #333; height: 2px; border: none;">
+
+    <div class="content">
+      <div class="command-line">
+        <div class="title">Social Lite</div>
+      </div>
+      <div class="output">
+        <p>All Popular Social Media PlatForms in one place</p>
+        <button onclick="window.location.href='https://m.facebook.com'" style=" border: none; border-radius: 20px; padding: 10px 20px; color: #1877f2;   border: 2px solid #1877f2; font-size: 16px;   letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(24, 119, 242, 0.8);">
+  Facebook
+</button>
+        <button onclick="window.location.href='https://www.youtube.com'" style=" border: none; border-radius: 20px; padding: 10px 20px; color: #ff0000; border: 2px solid #ff0000; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);">
+  YouTube
+</button>
+        <!-- Gmail Button -->
+<button onclick="window.location.href='https://mail.google.com'" style=" border: 2px solid #ea4335; border-radius: 20px; padding: 10px 20px; color: #ea4335; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(234, 67, 53, 0.8);">
+  Gmail
+</button>
+
+<!-- Twitter Button -->
+<button onclick="window.location.href='https://twitter.com'" style=" border: 2px solid #1da1f2; border-radius: 20px; padding: 10px 20px; color: #1da1f2; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(29, 161, 242, 0.8);">
+  Twitter
+</button>
+
+<!-- Instagram Button -->
+<button onclick="window.location.href='https://www.instagram.com'" style="border: 2px solid #c32aa3; border-radius: 20px; padding: 10px 20px; color: #c32aa3; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(195, 42, 163, 0.8);">
+  Instagram
+</button>
+
+
+      </div>
+    </div>
+   <hr style="color: #41d3d0; background-color: #333; height: 2px; border: none;">
+   <div class="content">
+      <div class="command-line">
+        <div class="title">Entertainment Lite</div>
+      </div>
+      <div class="output">
+        <p>All Popular Entertainment PlatForms in one place</p>
+        <button onclick="window.location.href='https://www.netflix.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #e50914;   border: 2px solid #e50914; font-size: 16px;   letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(229, 9, 20, 0.8);">
+  Netflix
+</button>
+        <!-- Spotify Button -->
+<button onclick="window.location.href='https://www.spotify.com'" style=" border-radius: 20px; padding: 10px 20px; color: #1db954; border: 2px solid #1db954; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(29, 185, 84, 0.8);">
+  Spotify
+</button>
+
+<!-- YouTube Button -->
+<button onclick="window.location.href='https://www.youtube.com'" style=" border-radius: 20px; padding: 10px 20px; color: #ff0000; border: 2px solid #ff0000; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);">
+  YouTube
+</button>
+
+<!-- Twitch Button -->
+<button onclick="window.location.href='https://www.twitch.tv'" style=" border-radius: 20px; padding: 10px 20px; color: #6441a5; border: 2px solid #6441a5; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(100, 65, 165, 0.8);">
+  Twitch
+</button>
+
+<!-- Disney+ Button -->
+<button onclick="window.location.href='https://www.disneyplus.com'" style="border-radius: 20px; padding: 10px 20px; color: #003b71; border: 2px solid #003b71; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(0, 59, 113, 0.8);">
+  Disney+
+</button>
+
+<!-- Amazon Prime Video Button -->
+<button onclick="window.location.href='https://www.amazon.com/primevideo'" style="border-radius: 20px; padding: 10px 20px; color: #00a8e1; border: 2px solid #00a8e1; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(0, 168, 225, 0.8);">
+  Amazon Prime Video
+</button>
+
+<!-- Steam Button -->
+<button onclick="window.location.href='https://store.steampowered.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #171a21; border: 2px solid #171a21; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(23, 26, 33, 0.8);">
+  Steam
+</button>
+
+<!-- Epic Games Button -->
+<button onclick="window.location.href='https://www.epicgames.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #313131; border: 2px solid #313131; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(49, 49, 49, 0.8);">
+  Epic Games
+</button>
+
+
+
+      </div>
+    </div>
+   <hr style="color: #41d3d0; background-color: #333; height: 2px; border: none;">
+   <div class="content">
+      <div class="command-line">
+        <div class="title">Productivity Lite</div>
+      </div>
+      <div class="output">
+        <p>All Popular Tools to enhance your Productivity</p>
+        <!-- Trello Button -->
+<button onclick="window.location.href='https://trello.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #0079bf; border: 2px solid #0079bf; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(0, 121, 191, 0.8);">
+  Trello
+</button>
+
+<!-- Evernote Button -->
+<button onclick="window.location.href='https://www.evernote.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #2dbe60; border: 2px solid #2dbe60; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(45, 190, 96, 0.8);">
+  Evernote
+</button>
+
+<!-- Google Drive Button -->
+<button onclick="window.location.href='https://www.google.com/drive'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #4285f4; border: 2px solid #4285f4; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(66, 133, 244, 0.8);">
+  Google Drive
+</button>
+
+<!-- Asana Button -->
+<button onclick="window.location.href='https://asana.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #ed8252; border: 2px solid #ed8252; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(237, 130, 82, 0.8);">
+  Asana
+</button>
+
+<!-- Notion Button -->
+<button onclick="window.location.href='https://www.notion.so'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #000000; border: 2px solid #000000; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
+  Notion
+</button>
+
+<!-- Microsoft OneDrive Button -->
+<button onclick="window.location.href='https://www.microsoft.com/onedrive'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #0078d7; border: 2px solid #0078d7; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(0, 120, 215, 0.8);">
+  Microsoft OneDrive
+</button>
+
+<!-- Todoist Button -->
+<button onclick="window.location.href='https://todoist.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #e4405f; border: 2px solid #e4405f; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(228, 64, 95, 0.8);">
+  Todoist
+</button>
+
+<!-- Dropbox Button -->
+<button onclick="window.location.href='https://www.dropbox.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #0061ff; border: 2px solid #0061ff; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(0, 97, 255, 0.8);">
+  Dropbox
+</button>
+
+      </div>
+   </div>
+   <hr style="color: #41d3d0; background-color: #333; height: 2px; border: none;">
+   
+      <div class="command-line">
+        <div class="title">Edu Lite</div>
+      </div>
+      <div class="output">
+        <p>All Popular Education PlatForms in one place</p>
+   <!-- Coursera Button -->
+<button onclick="window.location.href='https://www.coursera.org'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #2A73CC; border: 2px solid #2A73CC; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(42, 115, 204, 0.8);">
+  Coursera
+</button>
+
+<!-- Udemy Button -->
+<button onclick="window.location.href='https://www.udemy.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #EC5252; border: 2px solid #EC5252; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(236, 82, 82, 0.8);">
+  Udemy
+</button>
+
+<!-- Khan Academy Button -->
+<button onclick="window.location.href='https://www.khanacademy.org'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #0097A7; border: 2px solid #0097A7; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(0, 151, 167, 0.8);">
+  Khan Academy
+</button>
+
+<!-- edX Button -->
+<button onclick="window.location.href='https://www.edx.org'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #134B94; border: 2px solid #134B94; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(19, 75, 148, 0.8);">
+  edX
+</button>
+
+<!-- LinkedIn Learning Button -->
+<button onclick="window.location.href='https://www.linkedin.com/learning'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #0077B5; border: 2px solid #0077B5; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(0, 119, 181, 0.8);">
+  LinkedIn Learning
+</button>
+
+<!-- Codecademy Button -->
+<button onclick="window.location.href='https://www.codecademy.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #FF6C00; border: 2px solid #FF6C00; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(255, 108, 0, 0.8);">
+  Codecademy
+</button>
+
+<!-- Pluralsight Button -->
+<button onclick="window.location.href='https://www.pluralsight.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #F15B2A; border: 2px solid #F15B2A; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(241, 91, 42, 0.8);">
+  Pluralsight
+</button>
+
+<!-- Duolingo Button -->
+<button onclick="window.location.href='https://www.duolingo.com'" style="background-color: transparent; border-radius: 20px; padding: 10px 20px; color: #76C046; border: 2px solid #76C046; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; box-shadow: 0 0 10px rgba(118, 192, 70, 0.8);">
+  Duolingo
+</button>
+      </div>
+   </div>
+        <hr style="color: #41d3d0; background-color: #333; height: 2px; border: none;">
+
+  </div>
+  
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+ 
+</body>
+
+</html>
