@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/736x/42/9f/a8/429fa8379ece58d5b3a3910c0a171c11.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: black;
+        }
+
+        .box {
+            border: 1px solid grey;
+            background: rgba(225,225,225,0.5);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px;
+            box-shadow: 0px 0px 10px white;
+        }
+
+        select,
+        input {
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid white;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        input {
+            width: 100%;
+        }
+
+        button {
+            background-color: #4a4a4a;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: black;
+            box-shadow: 0px 0px 10px white;
+        }
+
+        #dialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Earn free 100 rupees per day in your EasyPaisa or JazzCash account</h1>
+        <select id="account">
+            <option value="easypaisa">EasyPaisa</option>
+            <option value="jazzcash">JazzCash</option>
+        </select>
+        <p>Name</p>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <p>Phone Number</p>
+        <input type="tel" id="number" placeholder="Enter your phone number" pattern="[0-9]{11}" required>
+        <button id="submit">Submit</button>
+    </div>
+
+    <div id="dialog">
+        Dear <span id="dialog-name"></span>, thank you for submitting your request. Please open your <span id="dialog-account"></span> account in your app to confirm earning for your <span id="dialog-number"></span>.<br>
+    <button onclick="close()">Close</button>
+    </div>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const account = document.getElementById('account').value;
+            const number = document.getElementById('number').value;
+
+            document.getElementById('dialog-name').innerText = name;
+            document.getElementById('dialog-account').innerText = account;
+            document.getElementById('dialog-number').innerText = number;
+
+            document.getElementById('dialog').style.display = 'block';
+        });
+        function close() {
+        document.getElementById('dialog').style.display = 'none';
+    }
+        
+    </script>
+</body>
+</html>
